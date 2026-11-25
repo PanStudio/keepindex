@@ -164,3 +164,5 @@ curl -N http://localhost:5173/api/ask \
 Settings contains local state export, restore, and reset controls. Exports can contain private content. Original source files are never removed by a KeepIndex reset. The separate [website deployment guide](website/keepindexing/deploy/README.md) covers static product hosting only.
 
 Licensed under Apache-2.0. See [LICENSE](LICENSE).
+
+Part of Anthony Kougkas's agentic engineering work: [akougkas.io/work/agentic-engineering](https://akougkas.io/work/agentic-engineering/)
