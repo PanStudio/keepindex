@@ -29,7 +29,7 @@ Second, a keep is the protected inner stronghold. The index lives inside a bound
 | Package name | `keepindex` |
 | CLI executable and technical short form | `keepidx` |
 | Domain | `keepindex.ing` |
-| Repository | `akougkas/keepindex` |
+| Repository | `PanStudio/keepindex` |
 | Environment prefix | `KEEPINDEX_` |
 | Browser-storage prefix | `keepindex-` |
 | Backup schema | `keepindex-state-backup` |

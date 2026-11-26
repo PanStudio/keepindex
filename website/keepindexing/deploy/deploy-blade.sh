@@ -4,7 +4,7 @@ set -Eeuo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SITE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 REMOTE=${REMOTE:-blade}
-REMOTE_DIR=${REMOTE_DIR:-/home/akougkas/webhosting/keepindex-site}
+REMOTE_DIR=${REMOTE_DIR:?Set REMOTE_DIR to the absolute deployment directory on the remote host.}
 [[ "$REMOTE" =~ ^[a-zA-Z0-9_.@-]+$ && "$REMOTE_DIR" =~ ^/[a-zA-Z0-9_./-]+$ ]] || {
   echo 'Use a simple SSH host alias and absolute deployment directory.' >&2; exit 2;
 }

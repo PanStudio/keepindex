@@ -4,13 +4,14 @@
   "version": "1.1.0",
   "description": "Private search on your computer. Your choice of AI.",
   "license": "Apache-2.0",
+  "author": "Anthony Kougkas",
   "homepage": "https://keepindex.ing",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akougkas/keepindex.git"
+    "url": "https://github.com/PanStudio/keepindex.git"
   },
   "bugs": {
-    "url": "https://github.com/akougkas/keepindex/issues"
+    "url": "https://github.com/PanStudio/keepindex/issues"
   },
   "keywords": [
     "local-first",

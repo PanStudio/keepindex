@@ -14,7 +14,7 @@ WORKDIR /app
 
 LABEL org.opencontainers.image.title="KeepIndex" \
       org.opencontainers.image.description="Private search on your computer. Your choice of AI." \
-      org.opencontainers.image.source="https://github.com/akougkas/keepindex" \
+      org.opencontainers.image.source="https://github.com/PanStudio/keepindex" \
       org.opencontainers.image.url="https://keepindex.ing" \
       org.opencontainers.image.version="1.1.0" \
       org.opencontainers.image.licenses="Apache-2.0"
@@ -25,7 +25,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
   && apt-get install --yes --no-install-recommends ca-certificates pandoc poppler-utils \
   && rm -rf /var/lib/apt/lists/*
 
-COPY package.json ./
+COPY package.json LICENSE NOTICE ./
 COPY --from=dependencies /app/node_modules/hono ./node_modules/hono
 COPY --from=build /app/dist ./dist
 COPY --chown=bun:bun server ./server
