@@ -15,7 +15,7 @@ KeepIndex brings your selected folders, Obsidian vaults, documents, and opt-in b
 Install Docker Desktop or Docker Engine with Compose. For AI answers, connect a local model runtime or explicitly select a remote AI endpoint; Docker does not automatically download a model. See [local inference](docs/LOCAL-INFERENCE.md) for local runtimes and remote gateways.
 
 ```bash
-git clone https://github.com/akougkas/keepindex.git
+git clone https://github.com/PanStudio/keepindex.git
 cd keepindex
 cp .env.example .env
 # Set LLM_URL to your preferred AI endpoint; choose a model that fits your RAM.
@@ -163,6 +163,6 @@ curl -N http://localhost:5173/api/ask \
 
 Settings contains local state export, restore, and reset controls. Exports can contain private content. Original source files are never removed by a KeepIndex reset. The separate [website deployment guide](website/keepindexing/deploy/README.md) covers static product hosting only.
 
-Licensed under Apache-2.0. See [LICENSE](LICENSE).
+Copyright 2026 PanStudio. Licensed under Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 Part of Anthony Kougkas's agentic engineering work: [akougkas.io/work/agentic-engineering](https://akougkas.io/work/agentic-engineering/)

@@ -13,7 +13,7 @@ const content = {
       paragraphs: [
         "Install Docker Desktop or Docker Engine with the Compose plugin. Clone KeepIndex and copy the environment template. Set an initial LLM_URL, or configure your endpoint later in Settings. Search can run while AI is unavailable.",
       ],
-      code: "git clone https://github.com/akougkas/keepindex.git\ncd keepindex\ncp .env.example .env\n# Edit .env for your local model runtime\n./start.sh",
+      code: "git clone https://github.com/PanStudio/keepindex.git\ncd keepindex\ncp .env.example .env\n# Edit .env for your local model runtime\n./start.sh",
       link: {
         href: "/inference",
         label: "Choose the model connection",
@@ -83,7 +83,7 @@ const content = {
       ],
       code: 'curl -N http://localhost:5173/api/ask \\\n  -H \'Content-Type: application/json\' \\\n  -d \'{"query":"What do my notes say about indexing?","target":"vault"}\'',
       link: {
-        href: "https://github.com/akougkas/keepindex#readme",
+        href: "https://github.com/PanStudio/keepindex#readme",
         label: "Read the full repository guide",
       },
     },
